@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+    </style>    
+</head>
+<body>
+    <table>
+        <caption style="font-size: xx-large;">NAZWA TABELI GÓRA</caption>
+        <colgroup>
+            <col span="1" style="background-color: white;">
+            <col span="1" style="background-color: red;">
+            <col span="2" style="background-color: green;">
+            <col span="2" style="background-color: yellow;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th></th>
+                <th>Kolumna 1</th>
+                <th>Kolumna 2</th>
+                <th>Kolumna 3</th>
+                <th>Kolumna 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Dane studenta</td>
+                <td>Imię</td>
+                <td>Nazwisko</td>
+                <td>Nr. albumu</td>
+                <td colspan="2">Imię matki i ojca</td>
+            </tr>
+            <tr>
+                <td>Łukasz</td>
+                <td>Żebrowski</td>
+                <td style="text-align: center;">80227</td>
+                <td>Jadwiga</td>
+                <td>Marek</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Stopka 1</td>
+                <td>Stopka 2</td>
+                <td>Stopka 3</td>
+                <td>Stopka 4</td>
+                <td>Stopka 5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

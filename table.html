@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele - ćwiczenie</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tabela 1</h3>
+
+    <table>
+        <caption>Tabela z ćwiczeń</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nazwa</th>
+                <th>Opis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td rowspan="2">2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <!-- <td>5</td> -->
+                <td>6</td>
+            </tr>
+            <tr>
+                <td colspan="3">7</td>
+                <!-- <td>8</td> -->
+                <!-- <td>9</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Stopka 1</td>
+                <td>Stopka 2</td>
+                <td>Stopka 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h4>Tabela 2</h4>
+    <table>
+        <caption>Tabela z ćwiczeń 2</caption>
+        <colgroup>
+            <col span="1" style="background-color: crimson;">
+            <col span="1" style="background-color: yellow;">
+            <col span="1" style="background-color: aqua;">
+            <col span="1" style="background-color: green;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nazwa</th>
+                <th>Opis</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>9999</td>
+                    <td>9999</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>9999</td>
+                    <td>9999</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>9999</td>
+                    <td>9999</td>
+                    <td>9999</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>
