@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="decription" content="Opis mojej strony">
+    <meta name="keywords" content="ogłoszenia, olsztyn">
+    <meta name="author" content="Łukasz">
+    <meta http-equiv="refresh" content="360">
+    <title>Tytuł zakładki - portal z ogłoszeniami</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <h1>Tytuł 1</h1>
+    <h2>Tytuł 2</h2>
+    <h3>Tytuł 3</h3>
+    <h4>Tytuł 4</h4>
+    <h5>Tytuł 5</h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, sequi?</p>
+    <p>Cum, eum! Eaque necessitatibus at facilis itaque. Est, enim unde.</p>
+    <p>Tempora nulla consequatur officia a itaque sequi ad ipsam odio?</p>
+    <p>Ad magnam dolorum aliquid quasi assumenda doloremque consequuntur, quo repellendus.</p>
+
+    <p>
+    <blockquote>Lorem ipsum dolor sit amet.</blockquote>
+    </p>
+    <h1>Cudzysłów</h1>
+    <p><q>ipsum dolor, sit amet consectetur adipisicing.</q>
+        Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Beatae sint laboriosam modi. Cumque, non ut.</p>
+    <p>Accusamus expedita ducimus, tempora corporis delectus cupiditate.</p>
+    <p>Temporibus expedita, illum architecto obcaecati velit itaque!</p>
+    <p>Cupiditate neque, quod deleniti tempora enim esse?</p>
+
+    <h3>Lista wypunktowana</h3>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Fuga, nulla?</li>
+        <li>Tenetur, non.</li>
+    </ul>
+
+    <ol>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Neque, nesciunt. Praesentium?</li>
+        <li>Mollitia, nemo facilis.</li>
+        <li>Eos, ducimus quibusdam.</li>
+    </ol>
+
+    <ol>
+        <li>Home</li>
+        <li>Lista produktów</li>
+        <ul>
+            <li>garnki</li>
+            <li>buty</li>
+        </ul>
+        <li>kontakt</li>
+    </ol>
+
+    <dt>Definicja 2</dt>
+    <dd>
+        wyjasnienie terminu z definicji 2
+    </dd>
+
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">L.P.</th>
+                <th colspan="3">Dane osobowe</th>
+            </tr>
+            <tr>
+                <td>Imię</td>
+                <td>Nazwisko</td>
+                <td>Wiek</td>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Łukasz</td>
+                <td>Żebrowski</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Arkadiusz</td>
+                <td>Nowosiak</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Średnia wieku</th>
+                <th>24</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3>Formularze</h3>
+
+    <form name="dane" method="post" action="index.php">
+        <fieldset>
+            <legend>Dane osobowe</legend>
+            <p>
+                <label>Podaj imię:</label>
+                <input type="text" name="imie" maxlength="10" placeholder="podaj imię" required>
+            </p>
+            <p>
+                <label>Podaj imię:</label>
+                <input type="email" name="email" maxlength="10" placeholder="podaj email" required>
+            </p>
+            <p>
+                <label>Adres WWW</label>
+                <input type="url" name="url" placeholder="url" required>
+            </p>
+            <p>
+                <label>Haslo</label>
+                <input type="password" name="password" placeholder="haslo" required>
+            </p>
+            <p>
+                <label>Znajdź</label>
+                <input type="search" name="znajdz" placeholder="podaj email" required>
+            </p>
+            <p>
+                <label>Data urodzenia</label>
+                <input type="date" name="data" required>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Inne dane</legend>
+            <textarea name="uwagi" placeholder="uwagi:"></textarea>
+            <p>
+                Wybierz swój rodzaj muzyki: <br />
+                <input type="checkbox" name="rodzaj" value="Rock" />Rock
+                <input type="checkbox" name="rodzaj" value="Pop" />Pop
+                <input type="checkbox" name="rodzaj" value="Jazz" />Jazz
+            </p>
+            <p>
+                Płeć <br />
+                <input type="radio" name="plec" value="k" required />kobieta
+                <input type="radio" name="plec" value="m" required />mezczyzna
+            </p>
+            <p>Jakiego urządzenia używasz: <br />
+                <select name="muzyka" required>
+                    <option value="z1">iPod</option>
+                    <option value="z2">Radia</option>
+                    <option value="z3">Komputera</option>
+                    <option value="z4">Telewizora</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" name="submit" value="Wyślij dane" />
+        </p>
+        <p>
+            <input type="reset" name="reset" value="Wyczyść formularz" />
+        </p>
+
+    </form>
+
+</body>
+
+</html>
