@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Opis mojej strony">
+  <meta name="keywords" content="ogłoszenia, ogłoszenie, portale z ogłoszeniami, olsztyn">
+  <meta name="autdor" content="Jan Kowalski">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <title>Zmiany elementów wierszowych na blokowe i odwrotnie</title>
+ 
+<style type="text/css">
+li {
+	width:200px;
+	display:inline;
+	background:red;
+	border-bottom: 1px solid red;
+}
+a.example {
+	display:block;
+	width: 200px;
+	border-bottom: 1px solid red;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<!--
+- elementy wewnątrzwierszowe - nie można zmienić ich szerokości. Jest ona uzależniona od zawartości
+tekstu. Nie można ustawić żadnych parametrów przypisanych do elementów blokowych (obramowanie, 
+szerokość, wysokość, padding oraz margin)
+
+-->
+<h1>Zamian elementu blokowego na element wewnątrzwierszowy</h1>
+<!-- element blokowy traci wszystkie cechy obramowanie, szerokość, wysokość, padding oraz margin) - 
+tych parametrów nie ustawimy.
+<ul>
+<li>Strona główna</li>
+<li>Produkty</li>
+<li>O nas</li>
+</ul>
+<h1>Zamian elementu wewnątrzwierszowego na blokowy</h1>
+<!-- element wewnątrzwierszowy nabywa wszystkie cechy elementu blokowego -->
+<h2>Przed zamianą</h2>
+<p>
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. <a href="https://www.wp.pl">ODNOŚNIK DO WP.PL</a>. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+<h2>Po zmianie</h2>
+<p>
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. <a href="https://www.wp.pl" class="example">ODNOŚNIK DO WP.PL</a>Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+<!-- inline-block: element blokowy zostanie rozmieszczony tak jak element wewnątrzwierszowy i zachowa
+jednocześnie cechy elementów blokowych
+-->
+</body>
+</html>

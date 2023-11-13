@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Opis mojej strony">
+  <meta name="keywords" content="ogłoszenia, ogłoszenie, portale z ogłoszeniami, olsztyn">
+  <meta name="autdor" content="Jan Kowalski">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <title>Pudełka wymiary</title>
+ 
+<style type="text/css">
+div {
+	height: 300px;
+	width: 300px;
+	font-size: 16px;
+	background-color: red;
+}
+p {
+	height: 70%;
+	width: 70%;
+	background-color: green;
+}
+p.em {
+	height: 10em; 
+	width: 10em;
+	background-color: green;
+}
+td.description  {
+	min-width: 450px;
+	max-width: 650px;
+	text-align: left;
+	padding: 5px;
+	margin: 0px;
+}
+h2.height, p.height {
+	width: 400px;
+	font-size: 90%;
+	line-height: 1.2em;
+}
+h2.height {
+	color: orange;
+	border-bottom: 1px solid #0088dd;
+}
+p.height {
+	min-height: 10px;
+	max-height: 30px;
+}
+</style>
+</head>
+<body>
+<h1>Wymiary pudełka: width, height</h1>
+<!-- 
+wymiary możemy określić w px, procentach oraz em. 
+W przypadku em wielkość elementu jest określana na podstawie wielkości umieszczonego w nim tekstu.
+W przypadku wielkości procentowych wymiar pudełka jest określany względem wymiarów pudełka, w którym
+się znajduje
+ -->
+<h2>Wymiar procentowy</h2>
+<div>
+<p>
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst.  
+</p>
+</div>
+<h2>Wymiar em</h2>
+<!-- bazowa czcionka to 16px, wymiary pudełka to 10em na 10em - a więc 10*16px na 10*16px) -->
+<div>
+<p class="em">
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+</div>
+
+<h2>min-width oraz max-width</h2>
+<!-- 
+min-width: najmniejsza szerokość jaką może przyjąć pudełko wyświetlone na wąskim ekranie
+max-width: maksymalna szerokość jaką może przyjąć pudełko wyświetlane na szerokim ekranie
+ -->
+<table>
+<tr>
+<td>
+<img src="slonie.jpg" width="80" />
+</td>
+<td class="description">
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst.
+</td>
+<td>1400zł</td>
+</tr>
+<tr>
+<td>
+<img src="slonie.jpg" width="80" />
+</td>
+<td class="description">
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst.
+</td>
+<td>1400zł</td>
+</tr>
+</table>
+
+<h2>min-height oraz max-height</h2>
+<!-- 
+Co się stanie, gdy zawartość pudełka będzie zbyt duża w stosunku do jego wymiarów?
+ -->
+<h2 class="height">Tytuł artykułu 1</h2>
+<p class="height">
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst.
+</p>
+<h2 class="height">Tytuł artykułu 2</h2>
+<p class="height">
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst.
+</p>
+<h2 class="height">Tytuł artykułu 3</h2>
+<p class="height">
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+Dowolny tekst. Dowolny tekst. Dowolny tekst.
+</p>
+</body>
+</html>

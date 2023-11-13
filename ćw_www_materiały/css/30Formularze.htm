@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Opis mojej strony">
+  <meta name="keywords" content="ogłoszenia, ogłoszenie, portale z ogłoszeniami, olsztyn">
+  <meta name="autdor" content="Jan Kowalski">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <title>Formularze</title>
+ 
+<style type="text/css">
+body {
+	font-family: Arial, Verdana, sans-serif;
+	color: #111111;
+}
+input {
+	font-size: 120%;
+	color: #5a5854;
+	background-color: #f2f2f2;
+	border: 1px solid #bdbdbd;
+	border-radius: 5px;
+	padding: 5px 5px 5px 30px;
+	background-repeat: no-repeat;
+	background-position: 8px 9px;
+	display: block;
+	margin-bottom: 10px;
+}
+input:focus {
+	background-color: yellow;
+	border: 1px solid #blele4;
+}
+input#email {
+	background-image: url("email.png");
+}
+input#www {
+	background-image: url("www.png");
+}
+input#facebook {
+	background-image: url("facebook.png");
+}
+fieldset {
+	width: 350px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	paddig: 20px;
+	text-align: right;
+}
+legend {
+	background-color: #efefef;
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+	padding: 5px 10px;
+	text-align: left;
+	text-transform: uppercase;
+}
+input.form2{
+	font-size: 120%;
+	color: #5a5854;
+	background-color: white;
+	border-bottom: 1px solid #bdbdbd;
+	border-top: 0px solid #bdbdbd;
+	border-left: 0px solid #bdbdbd;
+	border-right: 0px solid #bdbdbd;
+	border-radius: 0px;
+	padding: 5px 5px 5px 30px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	display: block;
+	margin-bottom: 10px;
+}
+input.form2:focus {
+	background-color: yellow;
+}
+label {
+	text-align: left;
+	display: block;
+}
+
+</style>
+</head>
+<body>
+<h1>Formularze i style CSS</h1>
+<!-- w celu sformatowania formularza należy posłużyć się wszystkimi dostępnymi stylami z sekcji tekst - 
+formatujące czcionkę oraz dowolny tekst na stronie. 
+Skorzystamy z następujących właściwości: 
+	font-size - aby określić wielkość czionki używanej do wpisywania tekstu w polu tekstowym,
+	color - aby określić kolor w polu tekstowym,
+	background-color - aby określić kolor tła pól tekstowych,
+	border - aby określić rodzaj obramowania,
+	border-radius - aby stworzyć zaokrąglone wierzchołki (w przeglądarkach, które na to pozwalają),
+	:focus - aby nastąpiła zmiana koloru, w momencie gdy użytkownik kliknie w pole tekstowe,
+	:hover - aby nastąpiła zmiana koloru, w momencie gdy użytkownik najedzie myszką na dany przycisk,
+-->
+<h2>Określanie postaci pól tekstowych</h2>
+<form action="17formularze.htm" method="post">
+<input type="text" name="email" placeholder="Podaj email" id="email" />
+<input type="text" name="www" placeholder="Podaj www" id="www" />
+<input type="text" name="facebook" placeholder="Podaj konto F" id="facebook" />
+</form>
+
+<h2>Określanie postaci grup pól oraz ich opisu</h2>
+<form name="dane" action="17formularze.htm" method="post">
+
+<fieldset>
+<legend>Dane osobowe</legend>
+	<p><label>Podaj imię:</label><input type="text" name="imie" maxlength="30" required class="form2" /></p>
+	<p><label>Adres email:</label><input type="email" name="email" required class="form2" /></p>
+	<p><label>Adres WWW: </label><input type="url" name="url" required class="form2" /></p>
+	<p><label>Hasło: </label><input type="password" name="haslo" required class="form2" /></p>
+	<p><label>Znajdź: </label><input type="search" name="wyszukaj" required class="form2" /></p>
+	<p><label>Data urodzenia: </label><input type="date" name="data" required class="form2" /></p>
+</fieldset>
+
+
+</body>
+</html>

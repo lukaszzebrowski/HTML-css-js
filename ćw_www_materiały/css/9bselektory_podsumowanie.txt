@@ -1,0 +1,145 @@
+﻿<html>
+<head>
+<style>
+
+h1,h2,h3 {
+ color: red;
+}
+
+h1,h2,h3
+<h1>Tytuł nr 1</h1>
+<h2>Tytuł nr 2</h2>
+<h3>Tytuł nr 3</h3>
+
+-----------------------------------------------------------
+
+div p - wszystkie akapity w div będą miały ten sam styl
+pozostałe akapity p (poza div) będą miały inny styl
+
+div p {
+ color: gray;
+ font-family: Garamond;
+} 
+
+<div>
+<p>
+Dowolny tekst w div
+</p>
+</div>
+<p>
+Dowolny tekst poza div
+</p>
+
+--------------------------------------------------------
+
+div p.diffrent - wszystkie akapity zdefiniowane za pomocą klasy diffrent będą wyróżnione w postaci pochylonego tekstu (akapit ten przejmuje wszystkie właściwości zdefiniowane za pomocą selektora p)
+
+div p.diffrent {
+ font-style: italic; 
+}
+
+<div>
+<p>
+Akapit bez klasy diffrent
+</p>
+<p class="diffrent">
+Akapit zdefiniowany za pomocą klasy diffrent
+</p>
+</div>
+
+----------------------------------------------------------------
+
+div p span - tekst znajdujący się w dowolnym akapicie otoczony znacznikiem span będzie wyróżniony kolorem czerwonym.
+
+div p span {
+ color:red;
+}
+
+<div>
+<p>
+ Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. <span>TEKST WYRÓŻNIONY</span>. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+</div>
+
+----------------------------------------------------------------------------
+div p.diffrent span - wyróżnie będzie zastosowane tylko w tych akapitach, które są zdefiniowane za pomocą klasy diffrent. Pozostałe akapity z span nie będą posiadały wyróżnienia.
+
+div p.diffrent span {
+ color:red;
+}
+
+<div>
+<p>
+Akapit bez klasy diffrent
+</p>
+<p class="diffrent">
+Akapit zdefiniowany za pomocą klasy diffrent
+</p>
+</div>
+--------------------------------------------------------
+
+div p:hover {
+ color: orange;
+}
+<div>
+<p>
+ Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. <span>TEKST WYRÓŻNIONY</span>. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+</div>
+
+--------------------------------------------------------
+div ul - wszystkie punktory w ul będą miały czcionkę arial
+
+div ul {
+ font-family: arial;
+}
+
+---------------------------------------------------------
+div ul li - wszystkie punktory zawarte w div ul będą miały ten sam styl (przejmują również czcionkę arial z ul, pozostałe poza div lub ul będą miały inny styl
+
+div ul li {
+ font-size: 10px;
+ color: blue;
+}
+
+<div>
+<ul>
+<li>punkt 1</li>
+<li>punkt2</li>
+</ul>
+<li>punkt3</li>
+</div>
+<li>punkt4</li>
+---------------------------------------------------------
+
+div ul li a - wszystkie odnośniki zawarte w div ul li będą miały ten sam styl (rónież przejmą style zbudowane w  ul oraz li), pozostałe poza div ul lub li będą miały inny styl
+
+ul li a {
+ text-decoration:none
+}
+
+<div><ul>
+<li><a href=#">odnośnik 1</a></li>
+<li><a href=#">odnośnik 2</a></li>
+<a href="#">odnośnik 3</a>
+</ul>
+<li><a href="#">odnośnik 4</a></li>
+</div>
+<li><a href="#">odnośnik 5</a></li>
+
+---------------------------------------------------------
+
+div ul li.wyroznienie a - selektor klasy dla li spowoduje, że zastosowanie klasy w wybranym li spowoduje wyróżnie tego elementu 
+
+div ul li.wyroznienie a {
+ color: pink;
+}
+
+<div>
+<ul>
+<li>punkt 1</li>
+<li class="wyroznienie">punkt 2</li>
+<li>punkt 3</li>
+</ul>
+</div>
+---------------------------------------------------------

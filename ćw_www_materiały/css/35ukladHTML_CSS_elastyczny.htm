@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Opis mojej strony">
+  <meta name="keywords" content="ogłoszenia, ogłoszenie, portale z ogłoszeniami, olsztyn">
+  <meta name="autdor" content="Jan Kowalski">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <title>Układ HTML</title>
+ 
+<style type="text/css">
+body {
+	font-family: Georgia, Times, serif;
+	line-height: 1.4em;
+	margin: 0px;
+}
+.wrapper {
+	width: 90%;
+	height: 100%;
+	margin: 10px auto 10px auto;
+}
+header {
+	background: #efefef;
+	margin: 1%;
+}
+section.opis {
+	background: #efefef;
+	margin: 1%;
+}
+section.article {
+	background: #efefef;
+	margin: 1% 0% 1% 0%;
+}
+article {
+	background: #efefef;
+	width: 31.3%;
+	height: 6em;
+	float: left;
+	margin: 0% 1% 1% 1%;
+	margin-top: 0px;
+}
+footer {
+	background: #efefef;
+	clear: both;
+	margin: 1%;
+}
+h2 {
+	text-align: center;
+	margin-bottom: 1%;
+	background: #efefef;
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+ul li {
+	display:inline;
+	padding: 0.5em;
+	margin: 0px;
+}	
+@media (min-width: 1050px) {
+.wrapper {width:90%;}
+article {width:31.3%;}
+}
+@media (max-width: 1050px) and (min-width: 950px) {
+.wrapper {width:90%;}
+article {width:31.3%;}
+}
+@media (max-width: 950px) and (min-width: 750px) {
+.wrapper {width:90%;}
+article {width:100%}
+header, section {width:100%;}
+}
+
+@media (max-width: 750px) and (min-width: 450px) {
+.wrapper {width:90%;}
+article {width:31.3%;}
+}
+@media (max-width: 450px) {
+.wrapper {width:90%;}
+article {width:100%}
+header, section {width:100%;}
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<h2>Logo</h2>
+		<nav>
+			<ul>
+				<li><a href="#">Strona główna</a></li>
+				<li><a href="#">Produkty</a></li>
+				<li><a href="#">Usługi</a></li>
+				<li><a href="#">O nas</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="opis">
+		Opis
+	</section>
+	<section class="article">
+	<article>
+		artykuł nr 1
+	</article>
+	
+	<article>
+		artykuł nr 2
+	</article>
+	<article>
+		artykuł nr 3
+	</article>
+	</section>
+	<footer>
+		stopka
+	</footer>
+</div>
+</body>
+</html>

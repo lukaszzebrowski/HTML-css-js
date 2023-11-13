@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Opis mojej strony">
+  <meta name="keywords" content="ogłoszenia, ogłoszenie, portale z ogłoszeniami, olsztyn">
+  <meta name="autdor" content="Jan Kowalski">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <title>Formularze - wyrównanie pól</title>
+ 
+<style type="text/css">
+p {
+	border-bottom: 1px solid #efefef;
+	margin: 20px;
+	padding-bottom: 20px;
+	width: 300px;
+}
+.title {
+	width: 110px;
+	float: left;
+	text-align: left;
+	padding-right: 10px;
+}
+
+</style>
+</head>
+<body>
+<h1>Wyrównanie pól formularzy</h1>
+
+<form name="dane" action="18formularze_wyrownanie_elementow.htm" method="post">
+	<p><label class="title">Podaj imię: </label><input type="text" name="imie" maxlength="30" required /></p>
+	<p><label class="title">Adres email: </label><input type="email" name="email" required /></p>
+	<p><label class="title">Adres WWW: </label><input type="url" name="url" required /></p>
+	<p><label class="title">Hasło: </label><input type="password" name="haslo" required /></p>
+	<p><label class="title">Znajdź: </label><input type="search" name="wyszukaj" required /></p>
+	<p><label class="title">Data urodzenia: </label><input type="date" name="data" required /></p>
+</form>
+</body>
+</html>

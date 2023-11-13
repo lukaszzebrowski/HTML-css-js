@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Opis mojej strony">
+  <meta name="keywords" content="ogłoszenia, ogłoszenie, portale z ogłoszeniami, olsztyn">
+  <meta name="autdor" content="Jan Kowalski">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+  <title>Tabele</title>
+ 
+<style type="text/css">
+body {
+	font-family: Arial, Verdana, sans-serif;
+	color: #111111;
+}
+table {
+	width: 800px;
+}
+th, td {
+	padding: 7px 10px 10px 10px;
+}
+th {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 90%;
+	border-bottom: 2px solid #111111;
+	border-top: 1px solid #999;
+	text-align: left;
+}
+tr.even {
+	background-color: #efefef;
+}
+tr:hover {
+	background-color: #c3e6e5;
+}
+.money {
+	text-align: right;
+}
+th.one,td.one {
+	
+	border:1px solid black;
+}	
+table.one {
+	border-spacing: 10px 20px;
+}
+</style>
+</head>
+<body>
+<h1>Aukcja literatury obcej</h1>
+<!-- w celu sformatowania tabeli należy posłużyć się wszystkimi dostępnymi stylami z sekcji tekst - 
+formatujące czcionkę oraz dowolny tekst na stronie.
+Skorzystamy z następujących właściwości: 
+	width: określić szerokość tabeli,
+	padding: określić odległość między obramowaniem każdej komórki,
+	text-transform: by zapisać treść nagłówka wielkimi literami,
+	letter-spacing, font-size: by w dodatkowy sposób zmodyfikować wygląd nagłówka tabeli,
+	border-top, border-bottom: by wyświetlić obramowanie powyżej i poniżej nagłówka tabeli,
+	text-align: aby w nniektórych komórkach tabeli wyrównać tekst do lewej, a w innych do prawej strony,
+	background-color: aby naprzemiennie zmieniać kolor tła w kolejnych wierszach,
+	:hover - aby podświetlać wiersz tabeli, w którym aktualnie znajduje się wskaźnik myszy. 
+-->
+<table>
+	<thead><!--Nagłówek tabeli-->
+		<tr><!--Budowa wiersza-->
+			<th>Autor</th>
+			<th>Tytuł</th>
+			<th>Cena minimalna</th>
+			<th>Bieżąca oferta</th>
+		</tr>
+	</thead>
+	<tbody><!--Zawartość tabeli-->
+		<tr class="even"><!--Budowa wiersza-->
+			<td>Jan Kowalski</td>
+			<td>Tytuł książki nr 1</td>
+			<td class="money">100zł</td>
+			<td class="money">130zł</td>
+		</tr>
+		<tr><!--Budowa wiersza-->
+			<td>Ewa Malinowska</td>
+			<td>Tytuł książki nr 2</td>
+			<td class="money">2300zł</td>
+			<td class="money">3500zł</td>
+		</tr>
+		<tr class="even"><!--Budowa wiersza-->
+			<td>Piotr Koniecpolski</td>
+			<td>Tytuł książki nr 3</td>
+			<td class="money">1500zł</td>
+			<td class="money">2100zł</td>
+		</tr>
+		<tr><!--Budowa wiersza-->
+			<td>Alina Zapadka</td>
+			<td>Tytuł książki nr 4</td>
+			<td class="money">5600zł</td>
+			<td class="money">7800zł</td>
+		</tr>
+	</tbody>
+	<tfoot><!--Stopka tabeli-->
+		<tr><!--Budowa wiersza-->
+			<th colspan="3">Podsumowanie:</th>
+			<th class="money">XXXXXzł</th>
+		</tr>
+	</tfoot>
+</table>
+<h1>Odstępy między komórkami: border-spacing, border-collapse</h1>
+<!-- 
+border-spacing: podajemy dwie wielkości odległość w poziomie komórek oraz odlrgłość w pionie komórek
+border-spacing: 10px 20px
+-->
+<!-- border-collapse: komórki będą dosunięte do siebie, zostanie zlikwidowany jakikolwiek odstep między 
+komórkami - border-collapse: collapse-->
+
+<table class="one">
+		<tr><!--Budowa wiersza-->
+			<th class="one">Autor</th>
+			<th class="one">Tytuł</th>
+			<th class="one">Cena minimalna</th>
+			<th class="one">Bieżąca oferta</th>
+		</tr>
+		<tr class="one"><!--Budowa wiersza-->
+			<td class="one">Jan Kowalski</td>
+			<td class="one">Tytuł książki nr 1</td>
+			<td class="one">100zł</td>
+			<td class="one">130zł</td>
+		</tr>
+		<tr><!--Budowa wiersza-->
+			<td class="one">Ewa Malinowska</td>
+			<td class="one">Tytuł książki nr 2</td>
+			<td class="one">2300zł</td>
+			<td class="one">3500zł</td>
+		</tr>
+		<tr class="one"><!--Budowa wiersza-->
+			<td class="one">Piotr Koniecpolski</td>
+			<td class="one">Tytuł książki nr 3</td>
+			<td class="one">1500zł</td>
+			<td class="one">2100zł</td>
+		</tr>
+		<tr class="one"><!--Budowa wiersza-->
+			<td class="one">Alina Zapadka</td>
+			<td class="one">Tytuł książki nr 4</td>
+			<td class="one">5600zł</td>
+			<td class="one">7800zł</td>
+		</tr>
+</table>
+</body>
+</html>

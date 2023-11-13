@@ -1,0 +1,149 @@
+﻿<html>
+<head>
+<style>
+
+h1,h2,h3 {
+ color: red;
+}
+
+div p {
+ color: gray;
+ font-family: Garamond; 
+} 
+
+div p.diffrent {
+ font-style: italic; 
+}
+
+
+div p span {
+ color:red;
+}
+
+div p.diffrent span {
+ font-style: italic;
+}
+
+div p:hover {
+ color: orange;
+}
+
+div ul {
+ font-family: arial;
+ color: gray;
+}
+
+div ul li {
+ font-size: 10px;
+}
+
+div ul li a {
+ text-decoration:none;
+ color: orange;
+}
+
+
+div ul li.wyroznienie {
+ color: pink;
+}
+</style>
+</head>
+
+<body>
+
+h1,h2,h3
+<h1>Tytuł nr 1</h1>
+<h2>Tytuł nr 2</h2>
+<h3>Tytuł nr 3</h3>
+
+<hr />
+
+div p
+<div>
+<p>
+Dowolny tekst zawarty w div
+</p>
+</div>
+<p>
+Dowolny tekst poza div
+</p>
+
+<hr />
+
+div p.diffrent 
+<div>
+<p>
+Akapit bez klasy diffrent
+</p>
+<p class="diffrent">
+Akapit zdefiniowany za pomocą klasy diffrent
+</p>
+</div>
+
+<hr />
+
+p span
+<div>
+<p>
+ Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. <span>TEKST WYRÓŻNIONY</span>. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+</div>
+
+<hr />
+
+div p.diffrent span
+<div>
+<p class="diffrent">
+ Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. <span>TEKST WYRÓŻNIONY</span>. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+<p>
+ Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. <span>TEKST WYRÓŻNIONY</span>. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+<hr />
+
+div p:hover {
+ color: orange;
+}
+<div>
+<p>
+ Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. <span>TEKST WYRÓŻNIONY</span>. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. Dowolny tekst. 
+</p>
+</div>
+
+<hr />
+
+div ul li
+<div>
+<ul>
+<li>punkt 1 zawarty w li</li>
+<li>punkt 2 zawarty w li</li>
+</ul>
+<li>punkt 3 poza ul</li>
+</div>
+<li>punkt 4 poza div</li>
+
+<hr />
+
+div ul li a
+<div>
+<ul>
+<li>rgbr<a href=#">odnośnik 1 zawarty w li</a></li>
+<li><a href=#">odnośnik 2 zawarty w li</a></li>
+<a href="#">odnośnik 3 poza li</a>
+</ul>
+<li><a href="#">odnośnik 4 poza ul</a></li>
+</div>
+<li><a href="#">odnośnik 5 poza div</a></li>
+
+<hr />
+
+<div>
+<ul>
+<li>punkt 1</li>
+<li class="wyroznienie">punkt 2</li>
+<li>punkt 3</li>
+</ul>
+</div>
+
+</body>
+</html>
