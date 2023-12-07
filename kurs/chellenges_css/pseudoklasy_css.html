@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="decription" content="Opis mojej strony">
+    <meta name="keywords" content="słowa kluczowe">
+    <meta name="author" content="Łukasz">
+    <meta http-equiv="refresh" content="360">
+    <link rel="stylesheet" href="" type="text/css">
+    <title>Tytuł</title>
+    <style>
+        .send {
+            width: 100px;
+            background-color: red;
+            border: 3px solid black;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .send:active {
+            font-weight: bold;
+        }
+
+        .send:hover {
+            background-color: orange;
+        }
+
+        .send:focus {
+            border: 3px solid coral;
+        }
+
+        .send:disabled {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="send">Potwierdź</button>
+    <button class="send">Cofnij</button>
+    <button class="send">Wyślij</button>
+    <button class="send" disabled>Płaska Ziemia</button>
+</body>
+
+</html>

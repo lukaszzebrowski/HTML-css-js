@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="decription" content="Formularze">
+    <meta name="keywords" content="Formularze">
+    <meta name="author" content="Łukasz">
+    <meta http-equiv="refresh" content="360">
+    <link rel="stylesheet" href="" type="text/css">
+    <title>Formularze - ćwiczenia</title>
+
+</head>
+
+<body>
+    <form action="new_article.php" method="post">
+        <p>
+            <label for="title">Tytuł artykułu</label>
+            <input type="text" name="title" id="title">
+        </p>
+
+        <p>
+            <label for="content">Treść artykułu</label>
+            <textarea name="content" id="content" cols="50" rows="4"></textarea>
+        </p>
+        <p>
+            <label for="publication_date">Data zakupu auta:</label>
+            <input type="datetime-local" name="publication_date" id="publication_date">
+        </p>
+        <p>
+            Typ publikacji:
+            <input type="radio" name="type" value="news" id="news">
+            <label for="news">Newsy</label>
+            <input type="radio" name="type" value="artcicle" id="artcicle">
+            <label for="article">Artykuł</label>
+            <input type="radio" name="type" value="review" id="review">
+            <label for="review">Recencja</label>
+        </p>
+        <p>
+            Tagi:
+            <input type="checkbox" name="tag" value="travel" id="travel">
+            <label for="travel">Podróże</label>
+            <input type="checkbox" name="tag" value="lifestyle" id="lifestyle">
+            <label for="travel">Lifestyle</label>
+        </p>
+        <p>
+            <label for="category">Kategorie:</label>
+            <select name="category" id="category">
+                <option value="category1">Kategoria 1</option>
+                <option value="category2">Kategoria 2</option>
+
+            </select>
+        </p>
+        <p>
+            <button type="submit">Wyślij</button>
+            <button type="reset">Resetuj</button>
+        </p>
+    </form>
+
+</body>
+
+</html>

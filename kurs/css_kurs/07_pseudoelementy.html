@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="decription" content="Opis mojej strony">
+    <meta name="keywords" content="słowa kluczowe">
+    <meta name="author" content="Łukasz">
+    <meta http-equiv="refresh" content="360">
+    <link rel="stylesheet" href="" type="text/css">
+    <title>Tytuł</title>
+    <style>
+        p::first-letter {
+            font-size: 20px;
+            font-weight: bold;
+            color: darkgray;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        ::selection {
+            color: red;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li::before {
+            content: "➣ ";
+        }
+
+        .best::before {
+            content: "🔥";
+        }
+
+        li::after {
+            content: "!!!";
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus atque ex tempore, accusamus dignissimos ea
+        rerum praesentium perferendis et odit iusto ducimus dolorum, error, architecto eveniet soluta facilis dolor
+        recusandae!</p>
+    <p>Totam autem vero qui similique?</p>
+    <p>Qui culpa consectetur magni ratione!</p>
+    <p>Ex reiciendis omnis assumenda eligendi.</p>
+    <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li class="best">Nobis, iure? Error, aliquam.</li>
+        <li>Exercitationem voluptatibus officiis amet.</li>
+    </ul>
+</body>
+
+</html>

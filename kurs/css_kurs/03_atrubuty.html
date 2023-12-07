@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="decription" content="Opis mojej strony">
+    <meta name="keywords" content="słowa kluczowe">
+    <meta name="author" content="Łukasz">
+    <meta http-equiv="refresh" content="360">
+    <link rel="stylesheet" href="" type="text/css">
+    <title>Tytuł</title>
+    <style>
+        [data-color] {
+            background-color: red;
+            border: 2px dotted;
+            font-weight: bold;
+        }
+
+        [data-color="blue"] {
+            background-color: lightskyblue;
+            border: 2px solid darkblue;
+        }
+
+        [data-green="light" i] {
+            background-color: lightgreen;
+        }
+
+        [data-green="dark" i] {
+            background-color: green;
+        }
+
+        [class*="str"] {
+            background-color: orange;
+        }
+
+        [class~="small-text"] {
+            font-size: 10px;
+        }
+
+        [class^="small-text"] {
+            border: 15px solid darkorange;
+        }
+
+        [class$="box"] {
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-color>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quia eaque amet nisi animi!
+        Numquam,
+        dolores suscipit? Molestias ullam quas reiciendis minima? Ex fuga tempora sit ipsum ut corporis autem?</div>
+    <div class="small-text str box">Nisi ducimus qui obcaecati deleniti doloribus rem quis fugit quasi vero quaerat
+        dignissimos,
+        dolorem dolores
+        possimus. Modi, quod tempore unde laboriosam repudiandae dolor ratione sint sapiente odio nulla illum molestias!
+    </div>
+    <div data-green="light">Tempore fugiat dolorum quaerat incidunt. Unde id ea cumque et? Maiores expedita quisquam,
+        aliquam
+        facilis, est
+        perferendis voluptates eos iusto et cum nesciunt vel, repudiandae at. Tempore magnam cupiditate officiis.</div>
+    <p data-color="blue">Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>
