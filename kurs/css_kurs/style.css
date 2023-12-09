@@ -1,8 +1,12 @@
-h3 {
-    text-decoration: underline;
-    color: red;
+body {
+  background-color: black;
+  color: white;
 }
 
-p {
-color: green;
+h1 {
+  color: lightblue;
+}
+
+article h1 {
+  color: red;
 }

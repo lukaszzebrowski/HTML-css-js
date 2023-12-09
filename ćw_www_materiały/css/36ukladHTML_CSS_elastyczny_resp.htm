@@ -1,277 +1,357 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Opis mojej strony">
-  <meta name="keywords" content="ogłoszenia, ogłoszenie, portale z ogłoszeniami, olsztyn">
-  <meta name="autdor" content="Jan Kowalski">
-  <meta http-equiv="refresh" content="60">
-  <meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
-  <title>Układ HTML</title>
- 
-<style type="text/css">
-body {
-	font-family: Arial, Georgia, Times, serif;
-	font-size: 14px;
-	line-height: 1.4em;
-	margin: 0px;
-}
-.wrapper {
-	width: 90%;
-	height: 100%;
-	margin: 10px auto 10px auto;
-}
-header {
-	background: ;
-	margin: 1%;
-}
-section.opis {
-	background: #efefef;
-	margin: 1%;
-	text-align: justify;
-}
-section.article {
-	background: #efefef;
-	margin: 1% 0% 1% 0%;
-}
-article {
-	background: #efefef;
-	width: 31.3%;
-	float: left;
-	margin: 0% 1% 1% 1%;
-	margin-top: 0px;
-	font-size: 0.9em;
-}
-footer {
-	background: #535353;
-	color: white;
-	clear: both;
-	margin: 1%;
-	padding: 1%;
-	font-size: 0.8em;
-	height: 20em;
-}
-h2 {
-	text-align: center;
-	margin-bottom: 0px;
-	color: #535353;
-}
-h3 {
-	text-align: center;
-}
-header img {
-	width: 100%;
-	margin-bottom: -10px;
-	padding: 0px;
-}
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #535353;
-}
-ul li {
-	float: left;
-}
-.right {
-	float:right;
-	background-color: white;
-	color: black;
-}
-a.right:hover {
-	float:right;
-	background-color: white;
-	color: red;
-}
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 7px 14px;
-  text-decoration: none;
-}
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-li.dropdown {
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-}
-.dropdown-content a {
-  color: black;
-  padding: 7px 10px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover {
-	background-color: red;
-	color: white;
-}
-.dropdown:hover .dropdown-content {
-	display: block;
-}
 
-@media (min-width: 1050px) {
-	.wrapper {width:90%;font-size:13px;}
-	article {width:31.3%;}
-}
-@media (max-width: 1050px) and (min-width: 950px) {
-	.wrapper {width:90%;font-size:13px;}
-	article {width:31.3%;}
-}
-@media (max-width: 950px) and (min-width: 750px) {
-	.wrapper {width:90%;font-size:16px;}
-	article, header, section, footer {width:100%;}
-	footer {width:98%;}
-}
-@media (max-width: 750px) and (min-width: 450px) {
-	.wrapper {width:90%;font-size:13px;}
-	article {width:31.3%;}
-}
-@media (max-width: 450px) {
-	.wrapper {width:90%;font-size:16px;}
-	article, header, section {width:100%;}
-	footer {width:98%;}
-}
-@media print {
-	body {
-	background: white;
-	color: green;
-	}
-}
-</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Opis mojej strony">
+	<meta name="keywords" content="ogłoszenia, ogłoszenie, portale z ogłoszeniami, olsztyn">
+	<meta name="autdor" content="Jan Kowalski">
+	<meta http-equiv="refresh" content="60">
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1, shrink-to-fit=no">
+	<title>Układ HTML</title>
+
+	<style type="text/css">
+		body {
+			font-family: Arial, Georgia, Times, serif;
+			font-size: 14px;
+			line-height: 1.4em;
+			margin: 0px;
+		}
+
+		.wrapper {
+			width: 90%;
+			height: 100%;
+			margin: 10px auto 10px auto;
+		}
+
+		header {
+			background: white;
+			margin: 1%;
+		}
+
+		section.opis {
+			background: #efefef;
+			margin: 1%;
+			text-align: justify;
+		}
+
+		section.article {
+			background: #efefef;
+			margin: 1% 0% 1% 0%;
+		}
+
+		article {
+			background: #efefef;
+			width: 31.3%;
+			float: left;
+			margin: 0% 1% 1% 1%;
+			margin-top: 0px;
+			font-size: 0.9em;
+		}
+
+		footer {
+			background: #535353;
+			color: white;
+			clear: both;
+			margin: 1%;
+			padding: 1%;
+			font-size: 0.8em;
+			height: 20em;
+		}
+
+		h2 {
+			text-align: center;
+			margin-bottom: 0px;
+			color: #535353;
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		header img {
+			width: 100%;
+			margin-bottom: -10px;
+			padding: 0px;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #535353;
+		}
+
+		ul li {
+			float: left;
+		}
+
+		.right {
+			float: right;
+			background-color: white;
+			color: black;
+		}
+
+		a.right:hover {
+			float: right;
+			background-color: white;
+			color: red;
+		}
+
+		li a,
+		.dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 7px 14px;
+			text-decoration: none;
+		}
+
+		li a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: red;
+		}
+
+		li.dropdown {
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 7px 10px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: red;
+			color: white;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		@media (min-width: 1050px) {
+			.wrapper {
+				width: 90%;
+				font-size: 13px;
+			}
+
+			article {
+				width: 31.3%;
+			}
+		}
+
+		@media (max-width: 1050px) and (min-width: 950px) {
+			.wrapper {
+				width: 90%;
+				font-size: 13px;
+			}
+
+			article {
+				width: 31.3%;
+			}
+		}
+
+		@media (max-width: 950px) and (min-width: 750px) {
+			.wrapper {
+				width: 90%;
+				font-size: 16px;
+			}
+
+			article,
+			header,
+			section,
+			footer {
+				width: 100%;
+			}
+
+			footer {
+				width: 98%;
+			}
+		}
+
+		@media (max-width: 750px) and (min-width: 450px) {
+			.wrapper {
+				width: 90%;
+				font-size: 13px;
+			}
+
+			article {
+				width: 31.3%;
+			}
+		}
+
+		@media (max-width: 450px) {
+			.wrapper {
+				width: 90%;
+				font-size: 16px;
+			}
+
+			article,
+			header,
+			section {
+				width: 100%;
+			}
+
+			footer {
+				width: 98%;
+			}
+		}
+
+		@media print {
+			body {
+				background: white;
+				color: green;
+			}
+		}
+	</style>
 </head>
+
 <body>
-<div class="wrapper">
-	<header>
-		<h2>Kup/Sprzedaj/Zamień</h2>
-		<ul class="right">
-			<li><a href="#" class="right">Rejestracjaj</a></li>
-			<li><a href="#" class="right">Logowanie</a></li>
-		</ul>
-		<img src="logo.jpg" />
-		<nav>
-			<ul>
-				<li><a href="#">Strona główna</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropbtn">Produkty</a>
-					<div class="dropdown-content">
-						  <a href="#">Produkt nr 1</a>
-						  <a href="#">Produkt nr 3</a>
-						  <a href="#">Produkt nr 3</a>
-					</div>
-				</li>
-				<li><a href="#">Usługi</a></li>
-				<li><a href="#">O nas</a></li>
-				<li><a href="#">Kontakt</a></li>
+	<div class="wrapper">
+		<header>
+			<h2>Kup/Sprzedaj/Zamień</h2>
+			<ul class="right">
+				<li><a href="#" class="right">Rejestracjaj</a></li>
+				<li><a href="#" class="right">Logowanie</a></li>
 			</ul>
-		</nav>
-	</header>
-	<section class="opis">
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-		Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
-	</section>
-	<section class="article">
-	<article>
-		<h3>Temat artykułu nr 1</h3>
-		<p>
-		Treść artykułu nr 1. Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.
-		Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.
-		Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.
-		</p>
-	</article>
-	<article>
-		<h3>Temat artykułu nr 2</h3>
-		<p>
-		Treść artykułu nr 2. Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.
-		Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.
-		Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.
-		</p>
-	</article>
-	<article>
-		<h3>Temat artykułu nr 3</h3>
-		<p>
-		Treść artykułu nr 3. Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.
-		Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.
-		Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.
-		</p>
-	</article>
-	<article style="clear:both;">
-		<h3>Temat artykułu nr 4</h3>
-		<p>
-		Treść artykułu nr 4. Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.
-		Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.
-		Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.
-		</p>
-	</article>
-	<article>
-		<h3>Temat artykułu nr 5</h3>
-		<p>
-		Treść artykułu nr 5. Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.
-		Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.
-		Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.
-		</p>
-	</article>
-	<article>
-		<h3>Temat artykułu nr 6</h3>
-		<p>
-		Treść artykułu nr 6. Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.
-		Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.
-		Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.
-		</p>
-	</article>
-	<article style="clear:both;">
-		<h3>Temat artykułu nr 7</h3>
-		<p>
-		Treść artykułu nr 7. Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.
-		Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.
-		Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.
-		</p>
-	</article>
-	<article>
-		<h3>Temat artykułu nr 8</h3>
-		<p>
-		Treść artykułu nr 8. Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.
-		Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.
-		Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.
-		</p>
-	</article>
-	<article>
-		<h3>Temat artykułu nr 9</h3>
-		<p>
-		Treść artykułu nr 9. Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.
-		Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.
-		Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.
-		</p>
-	</article>
-	</section>
-	<footer>
-		&copy; 2023 Ogłoszenia
-	</footer>
-</div>
+			<img src="logo.jpg" />
+			<nav>
+				<ul>
+					<li><a href="#">Strona główna</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">Produkty</a>
+						<div class="dropdown-content">
+							<a href="#">Produkt nr 1</a>
+							<a href="#">Produkt nr 3</a>
+							<a href="#">Produkt nr 3</a>
+						</div>
+					</li>
+					<li><a href="#">Usługi</a></li>
+					<li><a href="#">O nas</a></li>
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="opis">
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+			Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony. Opis strony.
+		</section>
+		<section class="article">
+			<article>
+				<h3>Temat artykułu nr 1</h3>
+				<p>
+					Treść artykułu nr 1. Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr
+					1.
+					Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.
+					Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.Treść artykułu nr 1.
+				</p>
+			</article>
+			<article>
+				<h3>Temat artykułu nr 2</h3>
+				<p>
+					Treść artykułu nr 2. Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr
+					2.
+					Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.
+					Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.Treść artykułu nr 2.
+				</p>
+			</article>
+			<article>
+				<h3>Temat artykułu nr 3</h3>
+				<p>
+					Treść artykułu nr 3. Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr
+					3.
+					Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.
+					Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.Treść artykułu nr 3.
+				</p>
+			</article>
+			<article style="clear:both;">
+				<h3>Temat artykułu nr 4</h3>
+				<p>
+					Treść artykułu nr 4. Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr
+					4.
+					Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.
+					Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.Treść artykułu nr 4.
+				</p>
+			</article>
+			<article>
+				<h3>Temat artykułu nr 5</h3>
+				<p>
+					Treść artykułu nr 5. Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr
+					5.
+					Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.
+					Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.Treść artykułu nr 5.
+				</p>
+			</article>
+			<article>
+				<h3>Temat artykułu nr 6</h3>
+				<p>
+					Treść artykułu nr 6. Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr
+					6.
+					Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.
+					Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.Treść artykułu nr 6.
+				</p>
+			</article>
+			<article style="clear:both;">
+				<h3>Temat artykułu nr 7</h3>
+				<p>
+					Treść artykułu nr 7. Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr
+					7.
+					Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.
+					Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.Treść artykułu nr 7.
+				</p>
+			</article>
+			<article>
+				<h3>Temat artykułu nr 8</h3>
+				<p>
+					Treść artykułu nr 8. Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr
+					8.
+					Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.
+					Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.Treść artykułu nr 8.
+				</p>
+			</article>
+			<article>
+				<h3>Temat artykułu nr 9</h3>
+				<p>
+					Treść artykułu nr 9. Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr
+					9.
+					Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.
+					Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.Treść artykułu nr 9.
+				</p>
+			</article>
+		</section>
+		<footer>
+			&copy; 2023 Ogłoszenia
+		</footer>
+	</div>
 </body>
+
 </html>
