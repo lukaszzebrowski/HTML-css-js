@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="decription" content="Opis mojej strony">
+    <meta name="keywords" content="słowa kluczowe">
+    <meta name="author" content="Łukasz Żebrowski">
+    <meta http-equiv="refresh" content="360">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Wzór</title>
+    <style>
+        form {
+            background-color: lightgray;
+            border: 3px solid black;
+        }
+
+        .none {
+            border: none;
+        }
+
+        .bor {
+            background-color: lightgray;
+            border: 3px solid black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Strona logowania -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <form action="/panel_główny" method="post">
+            <h2>Strona Logowania</h2>
+
+            <p>
+                <label for="identyfikator">Identyfikator:</label>
+                <input type="text" id="identyfikator" name="identyfikator" required>
+            </p>
+
+            <p>
+                <label for="haslo">Hasło:</label>
+                <input type="password" id="haslo" name="haslo" required>
+            </p>
+
+            <p>
+                <button type="submit">Zaloguj</button>
+            </p>
+        </form>
+    </div>
+
+    <!-- Panel Główny -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <form action="/dodaj_wycieczke" method="post">
+            <h2>Panel Główny - Wybierz Opcję</h2>
+
+            <p>
+                <button type="submit" name="opcja" value="nowa_wycieczka">Dodaj Nową Wycieczkę</button>
+                <button type="submit" name="opcja" value="opcja_1">Usuń wycieczkę</button>
+                <button type="submit" name="opcja" value="opcja_2">Pobierz dane uczestników</button>
+            </p>
+        </form>
+    </div>
+
+    <!-- Formularz Dodawania Nowej Wycieczki -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <form action="/terminy_i_ceny" method="post">
+            <h2>Formularz Dodawania Nowej Wycieczki</h2>
+
+            <p>
+                <label for="nazwa">Nazwa Wycieczki:</label>
+                <input type="text" id="nazwa" name="nazwa" required>
+            </p>
+
+            <p>
+                <label for="kategoria">Kategoria:</label>
+                <input type="text" id="kategoria" name="kategoria" required>
+            </p>
+            <p>
+                <label for="Destynacja">Destynacja:</label>
+                <input type="text" id="Destynacja" name="Destynacja" required>
+            </p>
+            <p>
+                <label for="kraj">Kraj:</label>
+                <input type="text" id="kraj" name="kraj" required>
+            </p>
+            <p>
+                <label for="lokalizacja">Lokalizacja:</label>
+                <input type="text" id="lokalizacja" name="lokalizacja" required>
+            </p>
+
+            <p>
+                <button type="button">Wstecz</button>
+                <button type="submit">Dalej</button>
+            </p>
+        </form>
+    </div>
+
+    <!-- Formularz Terminów i Cen -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <form action="/liczba_miejsc_i_dostepnosc" method="post">
+            <h2>Formularz Terminów i Cen</h2>
+
+            <p>
+                <label for="data_rozpoczecia">Data Rozpoczęcia:</label>
+                <input type="date" id="data_rozpoczecia" name="data_rozpoczecia" required>
+            </p>
+
+            <p>
+                <label for="data_zakonczenia">Data Zakończenia:</label>
+                <input type="date" id="data_zakonczenia" name="data_zakonczenia" required>
+            </p>
+
+            <p>
+                <label for="cena_podstawowa">Cena Podstawowa:</label>
+                <input type="number" id="cena_podstawowa" name="cena_podstawowa" required>
+            </p>
+
+            <!-- Pozostałe pola zniżek i dodatkowych kosztów -->
+
+            <p>
+                <button type="button">Wstecz</button>
+                <button type="submit">Dalej</button>
+            </p>
+        </form>
+    </div>
+
+    <!-- Formularz Liczby Miejsc i Dostępności -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <form action="/opcje_i_atrakcje" method="post">
+            <h2>Formularz Liczby Miejsc i Dostępności</h2>
+
+            <p>
+                <label for="liczba_miejsc">Liczba Miejsc:</label>
+                <input type="number" id="liczba_miejsc" name="liczba_miejsc" required>
+            </p>
+
+            <!-- Inne pola dotyczące dostępności -->
+
+            <p>
+                <button type="button">Wstecz</button>
+                <button type="submit">Dalej</button>
+            </p>
+        </form>
+    </div>
+
+    <!-- Formularz Dodatkowych Opcji i Atrakcji -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <form action="/opis" method="post">
+            <h2>Formularz Dodatkowych Opcji i Atrakcji</h2>
+
+            <p>
+                <label for="dodatkowe_atrakcje">Dodatkowe atrakcje:</label>
+                <input type="text" id="dodatkowe_atrakcje" name="dodatkowe_atrakcje" required>
+            </p>
+
+            <p>
+                <button type="button">Wstecz</button>
+                <button type="button">Dodaj</button>
+                <button type="submit">Dalej</button>
+            </p>
+        </form>
+    </div>
+
+    <!-- Formularz Opisu -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <form action="/podsumowanie" method="post">
+            <h2>Formularz Opisu</h2>
+
+            <p>
+                <label for="opis_wycieczki">Opis Wycieczki:</label>
+                <textarea id="opis_wycieczki" name="opis_wycieczki" required></textarea>
+            </p>
+
+            <p>
+                <button type="button">Wstecz</button>
+                <button type="submit">Dalej</button>
+            </p>
+        </form>
+    </div>
+
+    <!-- Podsumowanie Wycieczki -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <form action="/potwierdzenie_dodania" method="post">
+            <h2>Podsumowanie Wycieczki</h2>
+
+            <p>
+                <strong>Nazwa Wycieczki:</strong> Starożytna grecja
+            </p>
+
+
+            <p>
+                <strong>Opis Wycieczki:</strong>
+            </p>
+            <p>Wycieczka do Grecji to niezapomniana podróż w świat starożytnych mitów, słonecznych plaż i niezwykłej
+                kultury. Podczas
+                tego magicznego wyjazdu będziesz miał okazję odkrywać uroki greckich wysp, delektować się tradycyjnymi
+                smakami kuchni
+                śródziemnomorskiej, a także zwiedzać zabytki związane z bogatą historią tego kraju. Rozkoszuj się
+                błękitem Morza
+                Egejskiego, przechadzaj się po białych domkach na Santorini, a wieczorem zanurz się w atmosferze tawern
+                przy dźwiękach
+                greckiej muzyki. To wycieczka, która zaspokoi pragnienie piękna, przygody i relaksu.</p>
+
+            <p>
+                <strong>Kategoria:</strong> Wypoczynek
+            </p>
+            <p>
+                <strong>Kraj:</strong> Grecja
+            </p>
+            <p>
+                <strong>Destynacja:</strong> Europa
+            </p>
+            <p>
+                <strong>Lokalizacja:</strong> Oia
+            </p>
+
+            <p>
+                <strong>Data Rozpoczęcia:</strong> 2023-08-15
+            </p>
+
+            <p>
+                <strong>Data Zakończenia:</strong> 2023-08-22
+            </p>
+
+            <p>
+                <strong>Cena Podstawowa:</strong> 6000 PLN
+            </p>
+
+            <p>
+                <strong>Liczba Miejsc:</strong> 20
+            </p>
+
+            <p>
+                <strong>Dodatkowe Opcje:</strong> Nurkowanie
+            </p>
+
+            <p>
+                <button type="button">Wstecz</button>
+                <button type="submit">Potwierdź dodanie</button>
+            </p>
+        </form>
+    </div>
+    <!-- Komunikat Potwierdzający Dodanie Wycieczki -->
+    <div class="bor" style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <h2 style="text-align: center;">"Sukces!</h2>
+
+        <p>
+            Wycieczka "Starożytna grecja" została pomyślnie dodana do oferty biura podróży.
+        </p>
+
+        <p>
+            Co chcesz teraz zrobić?
+        </p>
+
+        <form class="none" action="/panel_glowny" method="post">
+            <button type="submit">Powrót do Panelu Głównego</button>
+            <button type="submit">Dodaj Kolejną Wycieczkę</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

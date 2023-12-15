@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="decription" content="Opis mojej strony">
+    <meta name="keywords" content="słowa kluczowe">
+    <meta name="author" content="Łukasz Żebrowski">
+    <meta http-equiv="refresh" content="360">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Wzór</title>
+    <style>
+        form {
+            background-color: lightgray;
+            border: 3px solid black;
+        }
+
+        .none {
+            border: none;
+        }
+
+        .bor {
+            background-color: lightgray;
+            border: 3px solid black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularze Wycieczki</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+
+            form {
+                width: 300px;
+                margin: 0 auto;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                margin-right: 5px;
+            }
+
+            input[type="range"] {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            input[type="submit"],
+            input[type="button"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover,
+            input[type="button"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Formularz 1 -->
+        <form action="#">
+            <label for="language">Proszę wybrać język:</label>
+            <input type="radio" id="polish" name="language" value="polish">
+            <label for="polish">Polski</label>
+            <input type="radio" id="english" name="language" value="english">
+            <label for="english">Angielski</label>
+            <br>
+            <input type="button" value="Dalej">
+        </form>
+
+        <!-- Formularz 2 -->
+        <form action="#">
+            <label for="destination">Proszę zaznaczyć Destynację:</label>
+            <input type="checkbox" id="europe" name="destination" value="europe">
+            <label for="europe">Europa</label>
+            <input type="checkbox" id="asia" name="destination" value="asia">
+            <label for="asia">Azja</label>
+            <input type="checkbox" id="africa" name="destination" value="africa">
+            <label for="asia">Afryka</label>
+            <input type="checkbox" id="amer" name="destination" value="american">
+            <label for="asia">Ameryka Północna</label>
+            <input type="checkbox" id="amer" name="destination" value="americas">
+            <label for="asia">Ameryka Półudniowa</label>
+            <br>
+            <input type="button" value="Wstecz">
+            <input type="button" value="Dalej">
+        </form>
+
+        <!-- Formularz 3 -->
+        <form action="#">
+            <input type="checkbox" id="germany" name="selectedCountries" value="germany">
+            <label for="germany">Niemcy</label>
+            <input type="checkbox" id="portugal" name="selectedCountries" value="portugal">
+            <label for="portugal">Portugalia</label>
+            <input type="checkbox" id="croatia" name="selectedCountries" value="croatia">
+            <label for="croatia">Chorwacja</label>
+            <input type="checkbox" id="spain" name="selectedCountries" value="spain">
+            <label for="spain">Hiszpania</label>
+            <input type="checkbox" id="france" name="selectedCountries" value="france">
+            <label for="france">Francja</label>
+            <input type="checkbox" id="romania" name="selectedCountries" value="romania">
+            <label for="romania">Rumunia</label>
+            <br>
+            <input type="checkbox" id="lithuania" name="selectedCountries" value="lithuania">
+            <label for="lithuania">Litwa</label>
+            <input type="checkbox" id="czechia" name="selectedCountries" value="czechia">
+            <label for="czechia">Czechy</label>
+            <input type="checkbox" id="sweden" name="selectedCountries" value="sweden">
+            <label for="sweden">Szwecja</label>
+            <input type="checkbox" id="italy" name="selectedCountries" value="italy">
+            <label for="italy">Włochy</label>
+            <input type="checkbox" id="greece" name="selectedCountries" value="greece">
+            <label for="greece">Grecja</label>
+            <input type="checkbox" id="bulgaria" name="selectedCountries" value="bulgaria">
+            <label for="bulgaria">Bułgaria</label>
+            <br>
+            <input type="button" value="Wstecz">
+            <input type="button" value="Dalej">
+        </form>
+
+
+        <!-- Formularz 4 -->
+        <form action="#">
+            <label for="tripDuration">Czas trwania wycieczki:</label>
+            <input type="range" id="tripDuration" name="tripDuration" min="3" max="14" value="7" step="1"
+                oninput="updateValue(this.value)">
+            <output for="tripDuration">14</output>
+            <br>
+
+
+            <br>
+            <label for="tripDate">Podaj termin wycieczki:</label>
+            <input type="date" id="tripDate" name="tripDate">
+            <br>
+            <input type="button" value="Wstecz">
+            <input type="button" value="Dalej">
+        </form>
+
+        <!-- Formularz 5 -->
+        <form action="#">
+            <label for="numberOfPeople">Podaj liczbę osób:</label>
+            <input type="number" id="adults" name="adults" placeholder="Dorośli">
+            <input type="number" id="children" name="children" placeholder="Dzieci">
+            <br>
+            <input type="button" value="Wstecz">
+            <input type="button" value="Dalej">
+        </form>
+
+        <!-- Formularz 6 -->
+        <form action="#">
+            <label for="tripPrice">Cena wycieczki:</label>
+            od: <input type="number" id="tripPrice" name="tripPrice" placeholder="0"><br>
+            do: <input type="number" id="tripPrice" name="tripPrice" placeholder="0">
+            <br>
+            <input type="button" value="Wstecz">
+            <input type="button" value="Dalej">
+        </form>
+
+        <!-- Formularz 7 -->
+        <form action="#">
+            <label for="selectedTrip">Dwie wycieczki do wyboru:</label>
+            <input type="radio" id="mountainTrip" name="selectedTrip" value="mountainTrip">
+            <label for="mountainTrip">
+                <strong>Wycieczka górskie szlaki.<br></strong> Podziwiaj piękno górskich krajobrazów i odkrywaj ukryte
+                szlaki. Wycieczka obejmuje noclegi w
+                górskim schronisku i pełne wyzywienie.<br> Cena 8000 zł
+            </label>
+            <br>
+            <input type="radio" id="historicalTrip" name="selectedTrip" value="historicalTrip">
+            <label for="historicalTrip"><strong>Wycieczka historyczne miasto.<br></strong> Przenieś się w czasie
+                odkrywając tajemnice
+                historycznego miasta. Zwiedzanie zabytków,
+                muzeów i urokliwych uliczek.<br> Cena 9700 zł</label>
+            <br>
+            <input type="button" value="Wstecz">
+            <input type="button" value="Wyślij" </body>
+        </form>
+        <form action="/panel_główny" method="post">
+            <h2>Strona Logowania</h2>
+
+            <p>
+                <label for="identyfikator">Email:</label>
+                <input type="text" id="identyfikator" name="identyfikator" required>
+            </p>
+
+            <p>
+                <label for="haslo">Hasło:</label>
+                <input type="password" id="haslo" name="haslo" required>
+            </p>
+
+            <p>
+                <button type="submit">Zaloguj</button>
+                <button type="submit">Zapomniałem hasła</button>
+                <button type="submit">Kup bez logowania</button>
+            </p>
+        </form>
+        <form action="#">
+            <h3 style="text-align: center;">Formularz osobowy</h3>
+            <label for="firstName">Imię:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Nazwisko:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Adres email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Numer telefonu:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <br>
+            <input type="button" value="Wstecz">
+            <input type="button" value="Dodaj kolejną osobę">
+            <input type="button" value="Zatwierdź/Wyślij">
+        </form>
+        <div class="bor" style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+            <h2 style="text-align: center;">"Sukces!</h2>
+
+            <p>
+                Zapisałeś się na wycieczkę!!! Na podany adres email zostało wysłane potwiedzenie. Wkrótcę skontaktujemy
+                się z tobą i przekażemy wszystkie szczegóły
+            </p>
+
+            <p>
+                Co chcesz teraz zrobić?
+            </p>
+
+            <form class="none" action="/panel_glowny" method="post">
+                <button type="submit">Powrót do strony głównej</button>
+                <button type="submit">Załóż konto na podane dane</button>
+            </form>
+        </div>
+
+    </html>

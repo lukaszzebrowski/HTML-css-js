@@ -1,0 +1,54 @@
+SELECT pacjent.imie, pacjent.nazwisko, miejscowosc.miejscowosc 
+FROM pacjent 
+	INNER JOIN miejscowosc 
+		ON pacjent.id_miejscowosc=miejscowosc.id_miejscowosc
+ORDER BY pacjent.nazwisko;
+
+
+SELECT pacjent.imie, pacjent.nazwisko, wiek.wiek 
+FROM pacjent 
+	INNER JOIN wiek 
+		ON pacjent.id_wiek=wiek.id_wiek
+WHERE wiek.wiek < 17
+ORDER BY pacjent.id_wiek DESC;
+
+SELECT pacjent.imie, pacjent.nazwisko, oddzial.oddzial 
+FROM pacjent 
+	INNER JOIN oddzial 
+		ON pacjent.id_oddzial=oddzial.id_oddzial
+WHERE pacjent.nazwisko LIKE'k%'
+ORDER BY pacjent.nazwisko DESC;
+
+SELECT pacjent.imie, pacjent.nazwisko, lekarz.imie, lekarz.nazwisko, oddzial.oddzial 
+FROM pacjent 
+	INNER JOIN lekarz 
+		ON pacjent.id_lekarz=lekarz.id_lekarz
+	INNER JOIN oddzial
+		ON pacjent.id_oddzial=oddzial.id_oddzial
+WHERE (pacjent.nazwisko LIKE '%a') AND (lekarz.nazwisko LIKE 'Nijaka')
+ORDER BY lekarz.nazwisko DESC;
+
+SELECT pacjent.nazwisko, wiek.wiek, lekarz.imie, lekarz.nazwisko  
+FROM pacjent 
+	INNER JOIN wiek 
+		ON pacjent.id_wiek=wiek.id_wiek
+	INNER JOIN lekarz
+		ON pacjent.id_lekarz=lekarz.id_lekarz
+	INNER JOIN oddzial
+		ON pacjent.id_oddzial=oddzial.id_oddzial
+WHERE (wiek.id_wiek BETWEEN 1 AND 18) AND (oddzial.oddzial LIKE 'Kardiologiczny')
+ORDER BY lekarz.nazwisko DESC;
+
+SELECT COUNT(pacjent.id_pacjent) AS 'Iloœæ pacjentów'
+FROM pacjent
+
+SELECT oddzial, COUNT(pacjent.id_pacjent) AS 'Iloœæ pacjentów'
+FROM pacjent
+INNER JOIN oddzial ON pacjent.id_oddzial=oddzial.id_oddzial
+GROUP BY oddzial.oddzial
+ORDER BY oddzial.oddzial;
+
+SELECT oddzial.oddzial, AVG(pacjent.id_wiek) AS 'Œrednia'
+FROM pacjent
+GROUP BY oddzial.oddzial
+ORDER BY wiek.wiek;
